@@ -102,13 +102,6 @@ I (189403) MAIN_LAB6: Display Update -> Distance: 81.0 cm
 #### ภาพผลลัพธ์การทดลอง
 ![alt text](lab6_picture.png)
 
-#### วิดีโอผลลัพธ์การทดลอง
-
-<video src="./lab6_clip.mp4" controls="controls" width="100%" height="auto">
-  วิดีโอสาธิตการทำงานของระบบ (lab6_clip.mp4)
-</video>
-
-
 ---
 
 ## 5. ปัญหาที่พบระหว่างการทดลองและแนวทางแก้ไข
