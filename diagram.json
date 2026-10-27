@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "author": "Lab 6 Student",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 40, "left": 10, "attrs": {} },
+    { "type": "wokwi-lcd1602", "id": "lcd", "top": -160, "left": -20, "attrs": {} },
+    { 
+      "type": "wokwi-dht22", 
+      "id": "dht", 
+      "top": -140, 
+      "left": 280, 
+      "attrs": { "temperature": "25", "humidity": "60" } 
+    },
+    { 
+      "type": "wokwi-hc-sr04", 
+      "id": "ultrasonic", 
+      "top": 120, 
+      "left": 280, 
+      "attrs": { "distance": "50" } 
+    }
+  ],
+  "connections": [
+    [ "esp:GND.1", "lcd:VSS", "black", [ "v0" ] ],
+    [ "esp:5V", "lcd:VDD", "red", [ "v0" ] ],
+    [ "esp:GND.1", "lcd:V0", "black", [ "v0" ] ],
+    [ "esp:4", "lcd:RS", "orange", [ "v0" ] ],
+    [ "esp:GND.1", "lcd:RW", "black", [ "v0" ] ],
+    [ "esp:5", "lcd:E", "purple", [ "v0" ] ],
+    [ "esp:16", "lcd:D4", "green", [ "v0" ] ],
+    [ "esp:17", "lcd:D5", "green", [ "v0" ] ],
+    [ "esp:18", "lcd:D6", "green", [ "v0" ] ],
+    [ "esp:19", "lcd:D7", "green", [ "v0" ] ],
+    [ "esp:5V", "lcd:A", "red", [ "v0" ] ],
+    [ "esp:GND.1", "lcd:K", "black", [ "v0" ] ],
+
+    [ "esp:3V3", "dht:VCC", "red", [ "v0" ] ],
+    [ "esp:22", "dht:SDA", "blue", [ "v0" ] ],
+    [ "esp:GND.2", "dht:GND", "black", [ "v0" ] ],
+
+    [ "esp:5V", "ultrasonic:VCC", "red", [ "v0" ] ],
+    [ "esp:23", "ultrasonic:TRIG", "orange", [ "v0" ] ],
+    [ "esp:21", "ultrasonic:ECHO", "blue", [ "v0" ] ],
+    [ "esp:GND.2", "ultrasonic:GND", "black", [ "v0" ] ]
+  ]
+}

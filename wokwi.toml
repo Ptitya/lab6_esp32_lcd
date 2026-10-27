@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+elf = "build/lab6_esp32_lcd.elf"
+firmware = "build/lab6_esp32_lcd.bin"
